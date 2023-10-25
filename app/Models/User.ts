@@ -31,6 +31,9 @@ export default class User extends BaseModel {
   public phone: string
 
   @column()
+  public active:boolean
+
+  @column()
   public rememberMeToken: string | null
 
   @column.dateTime({ autoCreate: true })
